@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* .hero-section{ */
+/* background-image: url("/images/background-image.webp");
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;} */
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 150%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+  overflow: hidden;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+  padding-top: 70px;
+}
+/* hero-section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  flex-direction: column;
+}
+.start-bussiness {
+  height: 260px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 30px;
+  padding: 15px;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.start-bussiness h1 {
+  font-size: 40px;
+}
+.start-bussiness p {
+  font-size: 25px;
+}
+.free-trail {
+  height: 260px;
+  width: 500px;
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding-top: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 50px;
+  font-size: large;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.free-trail h5 {
+  font-size: 50px;
+}
+.free-trail p {
+  font-size: Inter-Variable, Helvetica, Arial, sans-serif;
+  color: gray;
+  font-size: 25px;
+}
+input {
+  height: 55px;
+  width: 88%;
+  border: none;
+  border-radius: 80px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 18px;
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: inherit;
+}
+input::placeholder {
+  color: rgb(170, 157, 157);
+  padding-left: 15px;
+  font-size: 15px;
+}
+.btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 2px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #777781; /* darker blue */
+  transform: scale(1.05); /* slightly zooms */
+}
+.btn i {
+  font-size: 26px;
+}
+.screenshot img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+/* From Uiverse.io by JohnnyCSilva */
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 100px; */
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.box-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  width: 800px;
+  height: 500px;
+  background: #313131;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+  margin-top: 30px;
+}
+
+.img {
+  height: 30%;
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.textBox {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.textBox > .text {
+  font-weight: bold;
+}
+
+.textBox > .head {
+  font-size: 20px;
+}
+
+.textBox > .price {
+  font-size: 17px;
+}
+
+.textBox > span {
+  font-size: 12px;
+  color: lightgrey;
+}
+
+.card:hover > .textBox {
+  opacity: 1;
+}
+
+.card:hover > .img {
+  height: 65%;
+  filter: blur(7px);
+  animation: anim 3s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+.paragraph {
+  font-size: large;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph h2 {
+  font-size: 40px;
+}
+.paragraph p {
+  font-size: 20px;
+}
+/* card 2 */
+/* From Uiverse.io by Thomasfadi */
+.cards-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.cards-2 .red {
+  background-color: #007e9e;
+}
+
+.cards-2 .blue {
+  background-color: #0062ff;
+}
+
+.cards-2 .green {
+  background-color: #18cd5e;
+}
+.cards-2 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+/* .cards-2 .card p.second-text {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+} */
+
+.cards-2 .card:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.cards-2:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+.cards-2 h1 {
+  font-size: 40px;
+}
+.mesg {
+  color: black;
+  height: 300px;
+  width: 1200px;
+  margin-top: 100px;
+  font-size: 2.3rem;
+  font-weight: 500px;
+  overflow: hidden;
+}
+hr {
+  width: 80%;
+  margin-top: 80px;
+}
+.mesg h4 {
+  font-size: 1.5rem;
+  color: gray;
+  padding-bottom: 100px;
+}
+.footer-box {
+  height: 350px;
+  width: 950px;
+  background-color: #31008f;
+  padding: 80px 16px 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.footer-logo {
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+}
+.logo-mesg {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+.footer-box .btn {
+  font-size: 26x;
+  margin-top: 25px;
+  overflow: hidden;
+}
+.footer-box p {
+  margin-top: 30px;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+.question-section {
+  height: 800px;
+  width: 58%;
+  /* background-color: #777781; */
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* border-bottom: #777781;
+    border-radius: 30px;
+    border: 2px; */
+  overflow: hidden;
+}
+.question-section h2 {
+  font-size: 40px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid rgb(182, 175, 175);
+  overflow: hidden;
+}
+.questions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  border-bottom: 2px solid rgb(182, 175, 175);
+  padding-bottom: 28px;
+  overflow: hidden;
+}
+.questions i {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  /* background-color: azure; */
+  font-size: 30px;
+}
+.footer-links {
+  height: 150px;
+  width: 80%;
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo2 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.pages {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #000000;
+    text-decoration: underline;
+    overflow: hidden;
+}
